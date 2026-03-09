@@ -35,7 +35,28 @@ Program ini memiliki fitur yaitu:
 5. Transaksi  : Untuk melakukan pembelian merchandise dan menghitung total harga.
 6. Exit       : untuk keluar dari program.
 
-Tampilan program:
+Penjelasan
+1. Method Tambah Data
+   Method tambahData() digunakan untuk menambahkan data merchandise baru. Pengguna diminta memasukkan ID, nama merchandise, harga, dan stok. Setelah data dimasukkan, program membuat objek merchandise dan menyimpannya ke dalam ArrayList data.
+![code tambah.png](assets/code%20tambah.png)
+
+2. Method Lihat Data
+   Method lihatData() digunakan untuk menampilkan seluruh data merchandise. Jika data masih kosong, program akan menampilkan pesan bahwa data belum tersedia. Jika ada data, program akan menampilkan semua merchandise yang tersimpan.
+![code lihat.png](assets/code%20lihat.png)
+
+3. Method Update Data
+Method updateData() digunakan untuk mengubah data merchandise berdasarkan ID. Jika ID ditemukan, pengguna dapat mengganti nama, harga, dan stok merchandise dengan data baru.
+![code update.png](assets/code%20update.png)
+
+4. Method Hapus Data
+Method hapusData() digunakan untuk menghapus data merchandise dari daftar berdasarkan ID yang dimasukkan oleh pengguna.
+![code hapus.png](assets/code%20hapus.png)
+
+5. Method Transaksi
+Method transaksi() digunakan untuk melakukan pembelian merchandise. Program akan mengecek stok yang tersedia, menghitung total harga pembelian, lalu mengurangi stok merchandise sesuai jumlah yang dibeli.
+![code transaksi.png](assets/code%20transaksi.png)
+
+Tampilan output program:
 1. Menu Utama
     Tampilan menu utama saat program pertama kali dijalankan.
     ![Menu Utama.png](.\assets\Menu Utama.png)
