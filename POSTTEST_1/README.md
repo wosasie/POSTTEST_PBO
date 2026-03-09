@@ -59,34 +59,34 @@ Method transaksi() digunakan untuk melakukan pembelian merchandise. Program akan
 Tampilan output program:
 1. Menu Utama
     Tampilan menu utama saat program pertama kali dijalankan.
-    ![Menu Utama.png](.\assets\Menu Utama.png)
+![Menu Utama.png](assets/Menu%20Utama.png)
 
 
 2. Tambah Data Merchandise (Create)
     Proses memasukan data merchandise baru ke sistem.
-   ![Tambah Data Merch.png](.\assets\Tambah Data Merch.png)
+![Tambah Data Merch.png](assets/Tambah%20Data%20Merch.png)
 
 
 3. Menampilkan Data Merchandise (Read)
     Menampilkan daftar seluruh merchandise yang telah tersimpan.
-   ![Lihat Data Merch.png](.\assets\Lihat Data Merch.png)
+![Lihat Data Merch.png](assets/Lihat%20Data%20Merch.png)
 
 
 4. Mengubah Data Merchandise (Update)
     Untuk memperbaharui informasi merchandise berdasarkan ID.
-    ![Update Data Merch.png](.\assets\Update Data Merch.png)
+![Update Data Merch.png](assets/Update%20Data%20Merch.png)
 
 
 5. Menghapus Data Merchandise (Delete)
     Digunakan untuk menghapus data merchandise dari daftar.
-    ![Hapus Data Merch.png](.\assets\Hapus Data Merch.png)
+![Hapus Data Merch.png](assets/Hapus%20Data%20Merch.png)
     
 
 6. Transaksi Pembelian
    Terdapat transaksi sederhana untuk melakukan pembelian merchandise serta menghitung total harga secara otomatis. 
-    ![Transaksi Merch.png](.\assets\Transaksi Merch.png)
+![Transaksi Merch.png](assets/Transaksi%20Merch.png)
 
 
 7. Keluar dari Program (Exit)
     Program akan berhenti ketika pengguna memilih menu keluar.
-    ![Exit.png](.\assets\Exit.png)
+![Exit.png](assets/Exit.png)
