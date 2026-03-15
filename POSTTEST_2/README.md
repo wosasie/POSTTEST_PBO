@@ -7,10 +7,13 @@ Nama    : Aulia Natasya
 NIM     : 2409106084
 Kelas   : B2'24
 
-Program ini adalah aplikasi berbasisi java yang digunakan untuk mengelola data
+Program ini merupakan lanjutan dari Posttest 1. Di dalam Posttest 2 ini program masih sama yaitu untuk mengelola data
 merchandise dari tim Formula 1 McLaren. Program ini dapat melakukan operasi CRUD (Create, Read, Update, Delete)
 menggunakan ArrayList untuk menyimpan data merchandise. Program juga memiliki fitur transaksi pembelian yang akan
-mengurangi stok merchandise secara otomatis.
+mengurangi stok merchandise secara otomatis. Terdapat perbedaan dengan Posttest 1 yaitu Posttest 2 ini menerapkan konsep Encapsulation. Nah data yang ada di dalam class tidak lagi bisa di akses langsung dari luar class.
+Atribut seperti id, nama, harga, dan stok merchandise dibuat menjadi private agar data lebih aman. Encapsulation diterapkan dengan cara membuat atribut pada class menjadi private sehingga tidak dapat diakses lengsung dari luar class. Untuk mengambil nilai atribut digunakan getter seperti getStockMerch(), dan untuk mengubah nilai atribut menggunakan setter seperti setStokMerch().
+
+Karena atribut yang ada sudah dibuat menjadi private, maka untuk mengambil atau mengubah data harus digunakan method getter dan setter. Getter digunakan untuk mengambil nilai dari atribut, sedangkan setter dignakan untuk mengubah nilai atribut tersebut.
 
 Program ini memiliki tiga class:
 1. Main
