@@ -1,7 +1,7 @@
 POSTTEST 2
 PEMROGRAMAN BERORIENTASI OBJEK
 
-Sistem Penjualan Merchandise McLaren
+Sistem Penjualan kategori.Merchandise McLaren
 
 Nama    : Aulia Natasya
 NIM     : 2409106084
@@ -18,7 +18,7 @@ Karena atribut yang ada sudah dibuat menjadi private, maka untuk mengambil atau 
 Program ini memiliki tiga class:
 1. Main
    Class utama yang menjalankan menu program dan mengatur proses CRUD serta transaksi.
-2. Merchandise
+2. kategori.Merchandise
    Class yang digunakan untuk menyimpan data merchanise, seperti:
     - id merchandise
     - nama merchandise
@@ -65,22 +65,22 @@ Tampilan output program:
    ![Menu Utama.png](assets/Menu%20Utama.png)
 
 
-2. Tambah Data Merchandise (Create)
+2. Tambah Data kategori.Merchandise (Create)
    Proses memasukan data merchandise baru ke sistem.
    ![Tambah Data Merch.png](assets/Tambah%20Data%20Merch.png)
 
 
-3. Menampilkan Data Merchandise (Read)
+3. Menampilkan Data kategori.Merchandise (Read)
    Menampilkan daftar seluruh merchandise yang telah tersimpan.
    ![Lihat Data Merch.png](assets/Lihat%20Data%20Merch.png)
 
 
-4. Mengubah Data Merchandise (Update)
+4. Mengubah Data kategori.Merchandise (Update)
    Untuk memperbaharui informasi merchandise berdasarkan ID.
    ![Update Data Merch.png](assets/Update%20Data%20Merch.png)
 
 
-5. Menghapus Data Merchandise (Delete)
+5. Menghapus Data kategori.Merchandise (Delete)
    Digunakan untuk menghapus data merchandise dari daftar.
    ![Hapus Data Merch.png](assets/Hapus%20Data%20Merch.png)
 

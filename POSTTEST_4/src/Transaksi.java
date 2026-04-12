@@ -10,11 +10,18 @@ class Transaksi {
     }
 
     public int hitungTotal(int harga, int jumlah) {
-        return harga * jumlah;
+        double pajak = 0.1;
+        int subtotal = harga * jumlah;
+        return (int) (subtotal + (subtotal * pajak));
     }
 
-    public int hitungTotal(int harga, int jumlah, int diskon) {
-        return (harga * jumlah) - diskon;
+    public int hitungTotal(int harga, int jumlah, boolean member) {
+        double pajak = 0.1;
+        int subtotal = harga * jumlah;
+        if (member) {
+            subtotal = subtotal - 5000;
+        }
+        return (int) (subtotal + (subtotal * pajak));
     }
 
     public void tampilTransaksi() {
@@ -23,4 +30,3 @@ class Transaksi {
         System.out.println("Total Harga : " + total);
     }
 }
-

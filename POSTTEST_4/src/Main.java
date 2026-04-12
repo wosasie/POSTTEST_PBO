@@ -1,3 +1,5 @@
+import kategori.*;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -32,10 +34,11 @@ public class Main {
     static void tambahData() {
 
         System.out.println("Kategori:");
-        System.out.println("1. TShirt");
+        System.out.println("1. T-Shirt");
         System.out.println("2. Outerwear");
         System.out.println("3. Headwear");
         System.out.println("4. Accessories");
+        System.out.print("Pilihan Kategori: ");
         int kategori = input.nextInt();
         input.nextLine();
 
@@ -128,20 +131,29 @@ public class Main {
         System.out.print("ID barang: ");
         int id = input.nextInt();
 
-            for (int i = 0; i < data.size(); i++) {
-                if (data.get(i).getId() == id) {
-                   System.out.print("Jumlah beli: ");
-                   int jumlah = input.nextInt();
+        for (int i = 0; i < data.size(); i++) {
+            if (data.get(i).getId() == id) {
+                System.out.print("Jumlah beli: ");
+                int jumlah = input.nextInt();
+                if (jumlah <= data.get(i).getStok()) {
+                    Transaksi t = new Transaksi(data.get(i).getNama(), jumlah, 0);
+                    System.out.print("Apakah anda merupakan member?? (y/n): ");
+                    input.nextLine();
+                    String pilih = input.nextLine();
 
-                   if (jumlah <= data.get(i).getStok()) {
-                       int total = jumlah * data.get(i).getHarga();
-                       data.get(i).setStok(data.get(i).getStok() - jumlah);
+                    int total;
+                    if (pilih.equalsIgnoreCase("y")) {
+                        total = t.hitungTotal(data.get(i).getHarga(), jumlah, true);
+                    } else {
+                        total = t.hitungTotal(data.get(i).getHarga(), jumlah);
+                    }
+                    data.get(i).setStok((data.get(i).getStok() - jumlah));
 
-                       Transaksi t = new Transaksi(data.get(i).getNama(), jumlah, total);
-                       t.tampilTransaksi();
+                    Transaksi trx = new Transaksi(data.get(i).getNama(), jumlah, total);
+                    trx.tampilTransaksi();
                 } else {
-                       System.out.println("Stok tidak cukup!");
-                   }
+                    System.out.println("Stok tidak cukupp !!");
+                }
                 break;
             }
         }

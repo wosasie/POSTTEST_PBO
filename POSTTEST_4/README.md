@@ -1,4 +1,4 @@
-POSTTEST 3
+POSTTEST 4
 PEMROGRAMAN BERORIENTASI OBJEK
 
 Sistem Penjualan kategori.Merchandise McLaren
@@ -7,15 +7,16 @@ Nama    : Aulia Natasya
 NIM     : 2409106084
 Kelas   : B2'24
 
-Program ini merupakan lanjutan dari Posttest 2. Di dalam Posttest 3 ini program masih sama yaitu untuk mengelola data
-merchandise dari tim Formula 1 McLaren, akan tetapi terdepat perubahan dengan menggunakan konsep inheritance delam program ini. Inheritance merupakan konsep pewarisan dimana sebuah class dapat mewarisi atribut dan method dari class lain.
-Dalam program ini, class merchandise dijadikan sebagai superclass, sedangkan class tshirt, outerwear, headwear, dan accessoris merupakan subclass yang mewarisi atribut dan method dari class merchandise.
+Program ini merupakan lanjutan dari Posttest 3. Di dalam Posttest 4 ini program masih sama yaitu untuk mengelola data
+merchandise dari tim Formula 1 McLaren. Pada posttest ini, program tidak hanya menerapkan konsep inheritance, tetapi juga menambahkan konsep polymorphism dalam pemrograman berorientasi objek.
+Inheritance merupakan konsep pewarisan di mana sebuah class dapat mewarisi atribut dan method dari class lain.
+Dalam program ini, class Merchandise berperan sebagai superclass, sedangkan class TShirt, Outerwear, Headwear, dan Accessories merupakan subclass yang mewarisi atribut dan method dari class tersebut.
 
-Konsep inheritance yang digunakan adalah Hierarchical Inheritance, yaitu satu superclass memiliki lebih dari satu subclass. Relasi yang digunakan adalah is-a relationship, contohnya:
-T-Shirt adalah kategori.Merchandise
-kategori.Outerwear adalah kategori.Merchandise
-kategori.Headwear adalah kategori.Merchandise
-kategori.Accessories adalah kategori.Merchandise
+Untuk penerapan poymorphism:
+1. Method Overriding
+   Method tampilData() dioverride di setiap subclass untuk menampilkan informasi yang berbeda sesuai jenis merchandise.
+2. Method Overloading
+   Method hitungTotal() pada class Transaksi memiliki dua bentuk: Tanpa member dan dengan member (mendapat potongan harga)
 
 Program ini memiliki tujuh class:
 1. Main
@@ -98,7 +99,8 @@ Tampilan output program:
 
 6. Transaksi Pembelian
    Terdapat transaksi sederhana untuk melakukan pembelian merchandise serta menghitung total harga secara otomatis.
-   ![Transaksi Merch.png](assets/Transaksi%20Merch.png)
+   ![Transaksi Merch 1.png](assets/Transaksi%20Merch%201.png)
+   ![Transaksi Merch 2.png](assets/Transaksi%20Merch%202.png)
 
 
 7. Keluar dari Program (Exit)
